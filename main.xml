@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+
+<!-- ### START KEY ### -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<EditText android:id="@+id/edit_key"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:hint="@string/edit_key"
+			/>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/key_button"
+			android:onClick="makeKey"
+			/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Key: "
+			/>
+		<TextView android:id="@+id/text_hash"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text=""
+			/>
+	</LinearLayout>
+<!-- ### START BLUE DIVIDER ### -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="5dp"
+			/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#ff00ddff"
+			/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="5dp"
+			/>
+	</LinearLayout>
+<!-- ### END BLUE DIVIDER ### -->
+<!-- ### END KEY ### -->
+
+<!-- ### TO ### -->
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="To: "
+			android:textSize="18sp"
+			/>
+		<EditText android:id="@+id/edit_to"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:hint=""
+			/>
+	</LinearLayout>
+<!-- ### START BLUE DIVIDER ### -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="5dp"
+			/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#ff00ddff"
+			/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="5dp"
+			/>
+	</LinearLayout>
+<!-- ### END BLUE DIVIDER ### -->
+<!-- ### END TO ### -->
+
+
+
+
+<!--  ####### Cipher text here ######## -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/scroll_chat"
+		android:layout_weight="1"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:scrollbars="vertical"
+	>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/layout_chat"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:scrollbars="vertical"
+		>
+	</LinearLayout>
+</ScrollView>
+
+<!--  ########## End Cipher text ########## -->
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<EditText android:id="@+id/edit_message"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:hint="@string/edit_message"
+			android:scrollbars="vertical"
+			/>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/send_button"
+			android:onClick="send"
+			/>
+	</LinearLayout>
+</LinearLayout>
