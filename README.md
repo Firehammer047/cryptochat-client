@@ -1,4 +1,4 @@
-# cryptochat
+# cryptochat-client
 Secret key encrypted messenger Android app
 
 This project is substantially different from most modern day encrypted messaging services in that it employs symmetric encryption/decryption and the sender and receiver are anonymous from a digital standpoint.
